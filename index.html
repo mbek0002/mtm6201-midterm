@@ -52,7 +52,7 @@
             <div class="container">
                 <h1>Welcome to SAMZIO</h1>
                 <p>Where customization is as easy as ABC</p>
-                <a  href="#"class="btn btn-primary">See More<i class="fa-solid fa-arrow-right  ml-1"></i></a>
+                <a  href="#" class="btn btn-primary">See More<i class="fa-solid fa-arrow-right  ml-1"></i></a>
             </div>
         </div>
 
@@ -146,9 +146,10 @@
             </div>
             <div>
                 <div class="carousel">
-                  <ul class="slides">
-                    <input type="radio" name="radio-buttons" id="img-1" checked />
-                    <li class="slide-container">
+                <label id="slider-img" class="sr-only">Slider</label>
+                  <div class="slides">
+                    <input aria-labelledby="slider-img" type="radio" name="radio-buttons" id="img-1" checked />
+                    <div class="slide-container">
                       <div class="slide-image">
                         <div class="flex">
                             <div class="img-wrapper">
@@ -158,21 +159,21 @@
                                 <p>I was amazed at the variety of options available for customization. 
                                     From choosing the fabric and color to adding my own personalized message, the process was simple and easy to navigate. 
                                     I loved being able to have a say in every aspect of my garment, from the style and fit to the finishing touches.</p>
-                                <small class="text-secondary"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">John Doe</span></small>
+                                <small class="text-secondary-bold"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">John Doe</span></small>
                             </div>
                         </div>
                       </div>
                       <div class="carousel-controls">
-                        <label for="img-3" class="prev-slide">
-                          <span>&lsaquo;prev</span>
+                        <label for="img-3" class="prev-slide">&lsaquo;
+                          <span class="sr-only">prev</span>
                         </label>
-                        <label for="img-2" class="next-slide">
-                          <span>&rsaquo;next</span>
+                        <label for="img-2" class="next-slide">&rsaquo;
+                          <span class="sr-only">next</span>
                         </label>
                       </div>
-                    </li>
-                    <input type="radio" name="radio-buttons" id="img-2" />
-                    <li class="slide-container">
+                    </div>
+                    <input aria-labelledby="slider-img" type="radio" name="radio-buttons" id="img-2" />
+                    <div class="slide-container">
                       <div class="slide-image">
                         <div class="flex">
                             <div class="img-wrapper">
@@ -183,21 +184,21 @@
                                     I was able to choose everything from the fabric to the color, and even add my own 
                                     personal touch with custom embroidery. The best part was being able to see a preview 
                                     of my design before placing my order, which gave me complete confidence in my purchase.</p>
-                                    <small class="text-secondary"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">Sara Jones</span></small>
+                                    <small class="text-secondary-bold"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">Sara Jones</span></small>
                             </div>
                         </div>
                       </div>
                       <div class="carousel-controls">
-                        <label for="img-1" class="prev-slide">
-                          <span>&lsaquo;prev</span>
+                        <label for="img-1" class="prev-slide">&lsaquo;
+                          <span class="sr-only">prev</span>
                         </label>
-                        <label for="img-3" class="next-slide">
-                          <span>&rsaquo;next</span>
+                        <label for="img-3" class="next-slide">&rsaquo;
+                          <span class="sr-only">next</span>
                         </label>
                       </div>
-                    </li>
-                    <input type="radio" name="radio-buttons" id="img-3" />
-                    <li class="slide-container">
+                    </div>
+                    <input aria-labelledby="slider-img" type="radio" name="radio-buttons" id="img-3" />
+                    <div class="slide-container">
                       <div class="slide-image">
                         <div class="flex">
                             <div class="img-wrapper">
@@ -208,25 +209,25 @@
                                     The quality of the clothes was exceptional, and the fit was perfect. The attention to detail was evident in every stitch, 
                                     and the clothes were made with care and precision.
                                 </p>
-                                <small class="text-secondary"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">Clarke Sanders</span></small>
+                                <small class="text-secondary-bold"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">Clarke Sanders</span></small>
                             </div>
                         </div>
                       </div>
                       <div class="carousel-controls">
-                        <label for="img-2" class="prev-slide">
-                          <span>&lsaquo; prev</span>
+                        <label for="img-2" class="prev-slide">&lsaquo; 
+                          <span class="sr-only">prev</span>
                         </label>
-                        <label for="img-1" class="next-slide">
-                          <span>&rsaquo;next</span>
+                        <label for="img-1" class="next-slide">&rsaquo;
+                          <span class="sr-only">next</span>
                         </label>
                       </div>
-                    </li>
-                    <div class="carousel-dots">
-                      <label for="img-1" class="carousel-dot" id="img-dot-1"><span class="sr-only">1</span></label>
-                      <label for="img-2" class="carousel-dot" id="img-dot-2"><span class="sr-only">2</span></label>
-                      <label for="img-3" class="carousel-dot" id="img-dot-3"><span class="sr-only">3</span></label>
                     </div>
-                  </ul>
+                    <div class="carousel-dots">
+                      <label for="img-1" class="carousel-dot" id="img-dot-1"><span class="sr-only text-black">1</span></label>
+                      <label for="img-2" class="carousel-dot" id="img-dot-2"><span class="sr-only text-black">2</span></label>
+                      <label for="img-3" class="carousel-dot" id="img-dot-3"><span class="sr-only text-black">3</span></label>
+                    </div>
+                </div>
                 </div>
               </div>
         </div><!--Testimonial section ends here. Contains caroussel elements formed by input elements-->

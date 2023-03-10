@@ -169,6 +169,10 @@ h5{
     color: var(--secondary);
 }
 
+.text-secondary-bold{
+    color: var(--secondary-bold);
+}
+
 .text-white{
     color: var(--white);
 }
@@ -555,8 +559,8 @@ nav ul li a:hover, nav ul li a.active{
     margin: 2rem 0 5rem 0;
 }
 
-ul.slides {
-    display: block;
+.slides {
+    display: list-item;
     position: relative;
     height: 450px;
     margin: 0;
