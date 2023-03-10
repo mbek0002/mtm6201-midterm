@@ -158,7 +158,7 @@
                                 <p>I was amazed at the variety of options available for customization. 
                                     From choosing the fabric and color to adding my own personalized message, the process was simple and easy to navigate. 
                                     I loved being able to have a say in every aspect of my garment, from the style and fit to the finishing touches.</p>
-                                <small class="text-secondary">- John Doe</small>
+                                <small class="text-secondary"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">John Doe</span></small>
                             </div>
                         </div>
                       </div>
@@ -183,7 +183,7 @@
                                     I was able to choose everything from the fabric to the color, and even add my own 
                                     personal touch with custom embroidery. The best part was being able to see a preview 
                                     of my design before placing my order, which gave me complete confidence in my purchase.</p>
-                                <small class="text-secondary">- Sara Jones</small>
+                                    <small class="text-secondary"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">Sara Jones</span></small>
                             </div>
                         </div>
                       </div>
@@ -208,7 +208,7 @@
                                     The quality of the clothes was exceptional, and the fit was perfect. The attention to detail was evident in every stitch, 
                                     and the clothes were made with care and precision.
                                 </p>
-                                <small class="text-secondary">- Anonymous</small>
+                                <small class="text-secondary"  itemscope itemtype="https://schema.org/Person">- <span itemprop="name">Clarke Sanders</span></small>
                             </div>
                         </div>
                       </div>
@@ -263,8 +263,11 @@
                         <li>
                             <i class="fa-solid fa-phone"></i><span class="ml-2">+1(123)-456-789</span>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i><span class="ml-2">123 abcxyz Ottawa, ON<br>AB3 12C</span>
+                        <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <i class="fa-solid fa-location-dot"></i><span class="ml-2"><span itemprop="streetAddress">123 abcxyz</span> 
+                            <span itemprop="addressLocality">Ottawa</span>, 
+                            <span itemprop="addressRegion"> Ontario<br></span>
+                            <span  itemprop="postalCode">AB3 12C</span> </span>
                         </li>
                     </ul>
                 </div>

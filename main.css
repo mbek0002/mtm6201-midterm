@@ -177,8 +177,20 @@ h5{
     background-color: var(--primary);
 }
 
+.bg-white{
+    background-color: var(--white);
+}
 .center{
     text-align: center;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.border{
+    border: 1px solid var(--black);
+    border-top: none;
 }
 
 .container{
@@ -414,7 +426,11 @@ nav ul li a:hover, nav ul li a.active{
     .d-lg-none{
         display: none;
     }
+    .d-lg-block{
+        display: block;
+    }
     
+
     h1{
         font-size: 49px;
     }
@@ -669,6 +685,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 .breadcrumb-navigation{
     margin: 0;
+    padding-inline-start: 0;
 }
 
 .breadcrumb-navigation>li {
@@ -769,6 +786,70 @@ form{
     margin-bottom: 2rem;
 }
 
+.what_we_offer{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+.text .subtitle{
+    margin-bottom: 0;
+}
+
+#about .img-wrapper{
+    height: 15rem;
+    width: auto;
+    overflow: hidden;
+}
+
+#about .img-wrapper img{
+    height: 100%;
+    width: 100%;
+}
+
+#about .about, #about .text{
+    flex: 1;
+}
+
+
+#about .text .offers{
+    list-style-type: square;
+    padding-inline-start: 1.5rem;
+}
+#about .text .offers li{
+    margin-bottom: 0.5rem;
+}
+
+.md-reverse{
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+.value .flex{
+    flex-wrap: wrap;
+}
+
+.value ul{
+    list-style-type: disclosure-closed;
+    padding-inline-start: 1.5rem;
+}
+
+.value ul li{
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+.team-bg{
+    background-color: var(--secondary-light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.team-bg .grid-item:hover{
+    transform: none;
+}
+
+.team-bg .grid-item:hover .title{
+    background-color: var(--white);
+}
 .footer-info{
     background-color: var(--primary-bold);
     color: var(--white);
@@ -832,6 +913,15 @@ form{
     .carousel-controls {
         line-height: 350px;
     }
+
+    #about .img-wrapper{
+        height: 20rem;
+    }
+    
+    #about .img-wrapper img{
+        height: 100%;
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -853,6 +943,10 @@ form{
 
     .carousel-controls {
         line-height: 300px;
+    }
+
+    #about .img-wrapper{
+        height: 25rem;
     }
 }
 
@@ -887,6 +981,28 @@ form{
     .carousel {
         margin: 2rem 10% 5rem 10%;
     }
+
+    #about .img-wrapper{
+        height: 25rem;
+        width: auto;
+        overflow: hidden;
+        flex: 1;
+    }
+    
+    #about .img-wrapper img{
+        height: 100%;
+        width: 100%;
+    }
+
+    #about .d-lg-flex{
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .md-reverse{
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -905,5 +1021,9 @@ form{
     }
     .carousel {
         margin: 2rem 15% 5rem 15%;
+    }
+
+    #about .img-wrapper{
+        height: 28rem;
     }
 }
