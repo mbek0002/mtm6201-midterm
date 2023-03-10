@@ -19,7 +19,7 @@
 :root{
     --primary: #07cccc;
     --primary-light: #9DECEC;
-    --primary-medium: #1CA5A5;
+    --primary-medium: #157A7A;
     --primary-bold: #015254;
     --secondary: #fc4701;
     --secondary-bold: #CA3900;
@@ -165,6 +165,12 @@ h5{
     color: var(--primary);
 }
 
+.text-primary-medium{
+    color: var(--primary-medium);
+}
+.text-primary-bold{
+    color: var(--primary-bold);
+}
 .text-secondary{
     color: var(--secondary);
 }
