@@ -135,8 +135,8 @@ h5{
 }
 
 .btn-secondary{
-    background-color: var(--secondary);
-    color: var(--black);
+    background-color: var(--secondary-bold);
+    color: var(--white);
 }
 
 .btn-primary:hover, .btn-primary:focus{
@@ -145,7 +145,7 @@ h5{
 }
 
 .btn-secondary:hover, .btn-secondary:focus{
-    background-color: var(--secondary-bold);
+    background-color: var(--secondary);
     color: var(--white);
 }
 
@@ -356,7 +356,8 @@ nav ul li a{
     white-space: nowrap;
 }
 nav ul li a:hover, nav ul li a.active{
-    color: var(--primary);
+    border-top: 3px solid var(--primary);
+    color: var(--primary-bold);
 }
 
 .skip-links{
@@ -483,6 +484,15 @@ nav ul li a:hover, nav ul li a.active{
     min-height: 30rem;
     color: var(--white);
     padding: 5rem 0;
+}
+
+.main-jumbotron .container{
+    background-color: rgba(0, 0, 0, 0.347);
+    padding: 1rem;
+}
+
+.main-jumbotron .btn{
+    display: inline-block;
 }
 
 .grid-container{

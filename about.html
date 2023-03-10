@@ -197,12 +197,12 @@
                 </div>
                 <div class="contact">
                     <h5>Get in Touch</h5>
-                    <ul>
+                    <ul itemscope itemtype="https://schema.org/Organization">
                         <li>
-                            <i class="fa-solid fa-envelope"></i><span class="ml-2">email@samzio.com</span>
+                            <i class="fa-solid fa-envelope"></i><span class="ml-2" itemprop="email">email@samzio.com</span>
                         </li>
                         <li>
-                            <i class="fa-solid fa-phone"></i><span class="ml-2">+1(123)-456-789</span>
+                            <i class="fa-solid fa-phone"></i><span class="ml-2" itemprop="telephone">+1(123)-456-789</span>
                         </li>
                         <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <i class="fa-solid fa-location-dot"></i><span class="ml-2"><span itemprop="streetAddress">123 abcxyz</span> 
@@ -216,10 +216,21 @@
                     <h5>Socials</h5>
                     <p>Follow us on:</p>
                     <div>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://youtube.com/" target="_blank" class="ml-2"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://instagram.com/" target="_blank" class="ml-2"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/" target="_blank" class="ml-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span class="sr-only">facebook</span>
+                        </a>
+                        <a href="https://youtube.com/" target="_blank" class="ml-2">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span class="sr-only">youtube</span>
+                        </a>
+                        <a href="https://instagram.com/" target="_blank" class="ml-2">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span class="sr-only">instagram</span>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="ml-2">
+                            <i class="fa-brands fa-twitter"></i><span class="sr-only">Twitter</span>
+                        </a>
                     </div>
                 </div>
             </div>
