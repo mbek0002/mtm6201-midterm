@@ -666,6 +666,10 @@ ul.slides input {
     text-align: center;
 }
 
+.carousel-dot .sr-only{
+    color: #000;
+}
+
 .carousel-dots .carousel-dot {
     display: inline-block;
     width: 15px;
