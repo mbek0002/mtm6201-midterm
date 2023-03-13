@@ -201,11 +201,6 @@ h5{
     font-weight: bold;
 }
 
-.border{
-    border: 1px solid var(--black);
-    border-top: none;
-}
-
 .container{
     padding: 1em;
     margin-left: auto;
@@ -875,13 +870,16 @@ form{
     padding-bottom: 2rem;
 }
 
+.team-bg .grid-item{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    padding-bottom: 1rem;
+}
+
 .team-bg .grid-item:hover{
     transform: none;
 }
 
-.team-bg .grid-item:hover .title{
-    background-color: var(--white);
-}
 .footer-info{
     background-color: var(--primary-bold);
     color: var(--white);
