@@ -15,12 +15,12 @@
         <li><a href="#testimonials">Skip to testimonials section</a></li>
         <li><a href="#footer">Skip to footer</a></li>
       </ul>
-    <header>
+    <header role="banner">
         <nav id="home" role="navigation">
             <div class="container d-flex">
                 <a href="index.html">
                     <div class="img-wrapper">
-                        <img src="images/samzio-logo.png" alt="logo">
+                        <img src="images/samzio-logo.png" alt="logo"  class="logo">
                     </div>
                 </a>
                 <ul role="menu" class="d-md-flex d-none">
@@ -45,17 +45,16 @@
                 </div>
             </div>
         </nav>
-    </header> <!--Header ends here. Contains logo and navigation with a toggle menu which displays on small screens-->
-
-    <main role="main">
-        <div class="main-jumbotron" role="banner">
+        <div class="main-jumbotron">
             <div class="container">
                 <h1>Welcome to SAMZIO</h1>
                 <p>Where customization is as easy as ABC</p>
                 <a  href="#" class="btn btn-primary">See More<i class="fa-solid fa-arrow-right  ml-1"></i></a>
             </div>
         </div>
+    </header> <!--Header ends here. Contains logo and navigation with a toggle menu which displays on small screens-->
 
+    <main role="main">
         <div id="products">
             <div class="container center">
                 <h2 class="text-secondary angle my-2">Our Products</h2>
@@ -64,7 +63,19 @@
                     <div class="grid-item">
                         <a href="#">
                             <div class="img-wrapper">
-                                <img src="images/young-lady-in-hoodie@2x.png" alt="White woman wearing a hoodie">
+                                <picture>
+                                    <source srcset="images/young-lady-in-hoodie-600.png,
+                                                    images/young-lady-in-hoodie-1200.png 2x,
+                                                    images/young-lady-in-hoodie-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/young-lady-in-hoodie-992.png, 
+                                                    images/young-lady-in-hoodie-1984.png 2x,
+                                                    images/young-lady-in-hoodie-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+
+                                    <img src="images/young-lady-in-hoodie.png" alt="White woman wearing a hoodie">
+
+                                </picture>
                             </div>
                             <div class="bg-primary title">
                                 <h5 class="text-black">Hoodies</h5>
@@ -75,7 +86,18 @@
                     <div class="grid-item">
                         <a href="#">
                             <div class="img-wrapper">
-                                <img src="images/young-male-and-female-with-white-tops@2x.png" alt="Young man and woman wearing white tops">
+                                <picture>
+                                    <source srcset="images/young-male-and-female-with-white-tops-600.png,
+                                                    images/young-male-and-female-with-white-tops-1200.png 2x,
+                                                    images/young-male-and-female-with-white-tops-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/young-male-and-female-with-white-tops-992.png, 
+                                                    images/young-male-and-female-with-white-tops-1984.png 2x,
+                                                    images/young-male-and-female-with-white-tops-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                    <img src="images/young-male-and-female-with-white-tops.png" alt="Young man and woman wearing white tops">
+
+                                </picture>
                             </div>
                             <div class="bg-primary title">
                                 <h5 class="text-black">T-shirts</h5>
@@ -86,7 +108,17 @@
                     <div class="grid-item">
                         <a href="#">
                             <div class="img-wrapper">
-                                <img src="images/young-man-with-a-cap.png" alt="White man with a cap">
+                                <picture>
+                                    <source srcset="images/young-man-with-a-cap-600.png,
+                                                    images/young-man-with-a-cap-1200.png 2x,
+                                                    images/young-man-with-a-cap-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/young-man-with-a-cap-992.png, 
+                                                    images/young-man-with-a-cap-1984.png 2x,
+                                                    images/young-man-with-a-cap-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                    <img src="images/young-man-with-a-cap.png" alt="White man with a cap">
+                                </picture>
                             </div>
                             <div class="bg-primary title">
                                 <h5 class="text-black">Caps</h5>
@@ -97,7 +129,17 @@
                     <div class="grid-item">
                         <a href="#">
                             <div class="img-wrapper">
-                                <img src="images/young-basketballer@2x.png" alt="Black man holding a basket ball">
+                                <picture>
+                                    <source srcset="images/young-basketballer-600.png,
+                                                    images/young-basketballer-1200.png 2x,
+                                                    images/young-basketballer-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/young-basketballer-992.png, 
+                                                    images/young-basketballer-1984.png 2x,
+                                                    images/young-basketballer-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                    <img src="images/young-basketballer.png" alt="Black man holding a basket ball">
+                                </picture>
                             </div>
                             <div class="bg-primary title">
                                 <h5 class="text-black">Sport wears</h5>
@@ -108,7 +150,17 @@
                     <div class="grid-item">
                         <a href="#">
                             <div class="img-wrapper">
-                                <img src="images/white-man-with-a-cap.png" alt="White man wearing a cap">
+                                <picture>
+                                    <source srcset="images/white-man-with-a-cap-600.png,
+                                                    images/white-man-with-a-cap-1200.png 2x,
+                                                    images/white-man-with-a-cap-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/white-man-with-a-cap-992.png, 
+                                                    images/white-man-with-a-cap-1984.png 2x,
+                                                    images/white-man-with-a-cap-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                    <img src="images/white-man-with-a-cap.png" alt="White man wearing a cap">
+                                </picture>
                             </div>
                             <div class="bg-primary title">
                                 <h5 class="text-black">Caps</h5>
@@ -119,7 +171,18 @@
                     <div class="grid-item">
                         <a href="#">
                             <div class="img-wrapper">
-                                <img src="images/young-male-and-female-with-white-tops@2x.png" alt="Young man and woman wearing white tops">
+                                <picture>
+                                    <source srcset="images/young-male-and-female-with-white-tops-600.png,
+                                                    images/young-male-and-female-with-white-tops-1200.png 2x,
+                                                    images/young-male-and-female-with-white-tops-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/young-male-and-female-with-white-tops-992.png, 
+                                                    images/young-male-and-female-with-white-tops-1984.png 2x,
+                                                    images/young-male-and-female-with-white-tops-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                    <img src="images/young-male-and-female-with-white-tops.png" alt="Young man and woman wearing white tops">
+
+                                </picture>
                             </div>
                             <div class="bg-primary title">
                                 <h5 class="text-black">T-shirts</h5>
@@ -152,7 +215,17 @@
                       <div class="slide-image">
                         <div class="flex">
                             <div class="img-wrapper">
-                                <img src="images/john-doe-testimonial.png" alt="Picture of young white man">
+                                <picture>
+                                    <source srcset="images/john-doe-testimonial-600.png,
+                                                    images/john-doe-testimonial-1200.png 2x,
+                                                    images/john-doe-testimonial-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/john-doe-testimonial-992.png, 
+                                                    images/john-doe-testimonial-1984.png 2x,
+                                                    images/john-doe-testimonial-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                    <img src="images/john-doe-testimonial.png" alt="Picture of young white man">
+                                </picture>
                             </div>
                             <div class="text">
                                 <p>I was amazed at the variety of options available for customization. 
@@ -176,7 +249,17 @@
                       <div class="slide-image">
                         <div class="flex">
                             <div class="img-wrapper">
-                                <img src="images/sara-jones-testimonial.png" alt="Picture of young white woman">
+                                <picture>
+                                    <source srcset="images/sara-jones-testimonial-600.png,
+                                                    images/sara-jones-testimonial-1200.png 2x,
+                                                    images/sara-jones-testimonial-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/sara-jones-testimonial-992.png, 
+                                                    images/sara-jones-testimonial-1984.png 2x,
+                                                    images/sara-jones-testimonial-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                    <img src="images/sara-jones-testimonial.png" alt="Picture of young white woman">
+                                </picture>
                             </div>
                             <div class="text">
                                 <p>The website is very user-friendly, and the customization options are endless. 
@@ -201,7 +284,17 @@
                       <div class="slide-image">
                         <div class="flex">
                             <div class="img-wrapper">
-                                <img src="images/clarke-sanders-testimonial.png" alt="Picture of young black woman">
+                                <picture>
+                                    <source srcset="images/clarke-sanders-testimonial-600.png,
+                                                    images/clarke-sanders-testimonial-1200.png 2x,
+                                                    images/clarke-sanders-testimonial-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                    <source srcset="images/clarke-sanders-testimonial-992.png, 
+                                                    images/clarke-sanders-testimonial-1984.png 2x,
+                                                    images/clarke-sanders-testimonial-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                    <img src="images/clarke-sanders-testimonial.png" alt="Picture of young black woman">
+                                </picture>
                             </div>
                             <div class="text">
                                 <p>The process of designing my own clothes was incredibly easy and fun, and the end result was even better than I had imagined.
@@ -238,7 +331,7 @@
             <div class="container">
                 <div class="text">
                     <div class="img-wrapper">
-                        <img src="images/samzio-logo-white.png" alt="logo">
+                        <img src="images/samzio-logo-white.png" alt="logo" class="logo">
                     </div>
                     <p>SAMZIO takes into consideration what the competitors have to 
                         offer and provide better solutions for customers.

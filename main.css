@@ -486,7 +486,7 @@ nav ul li a:hover, nav ul li a.active{
 /* ==========MAIN SECTION STYLES STARTS (Mobile First)============ */
 
 .main-jumbotron{
-    background: url("./images/two-female-friends_hero-img@3x.png") center no-repeat;
+    background: url("./images/two-female-friends_hero-img.png") center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -509,6 +509,10 @@ nav ul li a:hover, nav ul li a.active{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+}
+
+#products .grid-item{
+    background-color: var(--primary);
 }
 
 .grid-item{
@@ -534,7 +538,7 @@ nav ul li a:hover, nav ul li a.active{
 .grid-item:hover{
     transform: translate(0, -20px);
 }
-.grid-item:hover .title{
+#products .grid-item:hover .title, #products .grid-item:hover{
     background-color: var(--primary-bold);
 }
 
@@ -548,7 +552,7 @@ nav ul li a:hover, nav ul li a.active{
 }
 
 .cta-bg{
-    background: linear-gradient(0deg, rgba(0, 75, 60, 0.418), rgba(2, 121, 109, 0.325)), url("./images/latina-girl-cta-img@3x.png") no-repeat top;
+    background: linear-gradient(0deg, rgba(0, 75, 60, 0.418), rgba(2, 121, 109, 0.325)), url("./images/latina-girl-cta-img.png") no-repeat top;
     background-size: cover;
     height: 100%;
     min-height: 10rem;
@@ -640,9 +644,6 @@ ul.slides input {
     cursor: pointer;
 }
 
-.slide-image:hover + .carousel-controls label{
-    opacity: 0.5;
-}
 
 
 .carousel-controls .prev-slide {
@@ -700,11 +701,9 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 }
 
 
-input:checked + .slide-container .nav label { display: block; }
-
 
 .header-img{
-    background: linear-gradient(0deg, rgba(0, 75, 60, 0.418), rgba(2, 121, 109, 0.325)), url("./images/young-lady_header-img@3x.png") no-repeat top;
+    background: linear-gradient(0deg, rgba(0, 75, 60, 0.418), rgba(2, 121, 109, 0.325)), url("./images/young-lady_header-img.png") no-repeat top;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -965,6 +964,10 @@ form{
         margin-top: 2rem;
     }
 
+    .slides {
+        height: 300px;
+    }
+
     .slide-image .img-wrapper{
         height: 15rem;
         overflow: hidden;
@@ -1056,7 +1059,9 @@ form{
         margin: 2rem 15% 5rem 15%;
     }
 
-    #about .img-wrapper{
-        height: 28rem;
+    img:not(.logo){
+        max-width: 100%;
+        height: auto !important;
+        object-fit: cover;
     }
 }

@@ -15,12 +15,12 @@
         <li><a href="#team">Skip to team section</a></li>
         <li><a href="#footer">Skip to footer</a></li>
       </ul>
-      <header>
+      <header role="banner">
         <nav id="home" role="navigation">
             <div class="container d-flex">
                 <a href="index.html">
                     <div class="img-wrapper">
-                        <img src="images/samzio-logo.png" alt="logo">
+                        <img src="images/samzio-logo.png" alt="logo"  class="logo">
                     </div>
                 </a>
                 <ul role="menu" class="d-md-flex d-none">
@@ -45,10 +45,7 @@
                 </div>
             </div>
         </nav>
-    </header> <!--Header ends here. Contains logo and navigation with a toggle menu which displays on small screens-->
-
-    <main role="main">
-        <div class="header-img" role="banner">
+        <div class="header-img">
             <div class="container">
                 <h1 class="subtitle">About Us</h1>
                 <ul class="breadcrumb-navigation">
@@ -56,8 +53,11 @@
                     <li><a href="contact.html" class="active">About Us</a></li>
                 </ul>
             </div>
-        </div> <!--Banner ends here. Contains background image and breadcrumb items-->
+        </div> 
+    </header> <!--Header ends here. Contains logo and navigation with a toggle menu which displays on small screens
+    Also Contains background image and breadcrumb items-->
 
+    <main role="main">
         <div id="about" class="container">
             <h2 class="text-secondary angle my-2">Meet SAMZIO</h2>
             <div class="d-lg-flex">
@@ -72,13 +72,33 @@
                         to customers, but SAMZIO stands out and provide better solutions for customers.</p>
                 </div>
                 <div class="img-wrapper d-none d-lg-block">
-                    <img src="images/three-friends-laughing.png" alt="three friends laughing">
+                    <picture>
+                        <source srcset="images/three-friends-laughing-600.png,
+                                        images/three-friends-laughing-1200.png 2x,
+                                        images/three-friends-laughing-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                        <source srcset="images/three-friends-laughing-992.png, 
+                                        images/three-friends-laughing-1984.png 2x,
+                                        images/three-friends-laughing-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                        <img src="images/three-friends-laughing.png" alt="three friends laughing">
+                    </picture>
                 </div>
             </div>
 
             <div class="d-lg-flex my-2">
                 <div class="img-wrapper">
-                    <img class="abt-img" src="images/young-girls-taking-walk-after-shopping@2x.png" alt="three girls talking after shopping">
+                    <picture>
+                        <source srcset="images/young-girls-taking-walk-after-shopping-600.png,
+                                        images/young-girls-taking-walk-after-shopping-1200.png 2x,
+                                        images/young-girls-taking-walk-after-shopping-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                        <source srcset="images/young-girls-taking-walk-after-shopping-992.png, 
+                                        images/young-girls-taking-walk-after-shopping-1984.png 2x,
+                                        images/young-girls-taking-walk-after-shopping-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                        <img class="abt-img" src="images/young-girls-taking-walk-after-shopping.png" alt="three girls talking after shopping">
+                    </picture>
                 </div>
                 <div class="text">
                     <div class="mission">
@@ -122,7 +142,17 @@
                         </div>
                     </div>
                     <div class="img-wrapper">
-                        <img src="images/young-girl-in-black.jpg" alt="young girl wearing black top and pant">
+                        <picture>
+                            <source srcset="images/young-girl-in-black-600.jpg,
+                                            images/young-girl-in-black-1200.jpg 2x,
+                                            images/young-girl-in-black-1800.jpg 3x"
+                                            media="(max-width: 600px)"/>
+                            <source srcset="images/young-girl-in-black-992.jpg, 
+                                            images/young-girl-in-black-1984.jpg 2x,
+                                            images/young-girl-in-black-2976.jpg 3x"
+                                            media="(max-width: 992px)"/>
+                            <img src="images/young-girl-in-black.jpg" alt="young girl wearing black top and pant">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -134,7 +164,17 @@
                 <div class="grid-container">
                     <div class="grid-item" itemscope itemtype="https://schema.org/Person">
                         <div class="img-wrapper">
-                            <img src="images/jeremy-james-ceo.png" alt="Piture of a black man wearing sunglasses">
+                            <picture>
+                                <source srcset="images/jeremy-james-ceo-600.png,
+                                                images/jeremy-james-ceo-1200.png 2x,
+                                                images/jeremy-james-ceo-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                <source srcset="images/jeremy-james-ceo-992.png, 
+                                                images/jeremy-james-ceo-1984.png 2x,
+                                                images/jeremy-james-ceo-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                <img src="images/jeremy-james-ceo.png" alt="Piture of a black man wearing sunglasses">
+                            </picture>
                         </div>
                         <div class="bg-white border title">
                             <h5 class="text-primary-medium" itemprop="name">Jeremy James</h5>
@@ -146,7 +186,17 @@
                     </div>
                     <div class="grid-item" itemscope itemtype="https://schema.org/Person">
                         <div class="img-wrapper">
-                            <img src="images/johnny-doe-cto.png" alt="Piture of a white man wearing sunglasses">
+                            <picture>
+                                <source srcset="images/johnny-doe-cto-600.png,
+                                                images/johnny-doe-cto-1200.png 2x,
+                                                images/johnny-doe-cto-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                <source srcset="images/johnny-doe-cto-992.png, 
+                                                images/johnny-doe-cto-1984.png 2x,
+                                                images/johnny-doe-cto-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                                <img src="images/johnny-doe-cto.png" alt="Piture of a white man wearing sunglasses">
+                            </picture>
                         </div>
                         <div class="bg-white border title">
                             <h5 class="text-primary-medium" itemprop="name">John Doe</h5>
@@ -159,6 +209,16 @@
                     </div>
                     <div class="grid-item" itemscope itemtype="https://schema.org/Person">
                         <div class="img-wrapper">
+                            <picture>
+                                <source srcset="images/tobi-coles-manager-600.png,
+                                                images/tobi-coles-manager-1200.png 2x,
+                                                images/tobi-coles-manager-1800.png 3x"
+                                            media="(max-width: 600px)"/>
+                                <source srcset="images/tobi-coles-manager-992.png, 
+                                                images/tobi-coles-manager-1984.png 2x,
+                                                images/tobi-coles-manager-2976.png 3x"
+                                            media="(max-width: 992px)"/>
+                            </picture>
                             <img src="images/tobi-coles-manager.png" alt="Picture of a young man smiling">
                         </div>
                         <div class="bg-white border title">
@@ -179,7 +239,7 @@
             <div class="container">
                 <div class="text">
                     <div class="img-wrapper">
-                        <img src="images/samzio-logo-white.png" alt="logo">
+                        <img src="images/samzio-logo-white.png" alt="logo"  class="logo">
                     </div>
                     <p>SAMZIO takes into consideration what the competitors have to 
                         offer and provide better solutions for customers.
