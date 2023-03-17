@@ -522,15 +522,14 @@ nav ul li a:hover, nav ul li a.active{
     transition: all ease 0.3s;
 }
 
-.grid-item .img-wrapper{
+#products .grid-item .img-wrapper{
     overflow: hidden;
-    max-height: 12rem;
-    height: 100%;
+    max-height: 22rem;
+    height: fit-content;
     width: auto;
 }
 
 .grid-item .img-wrapper img{
-    height: 100%;
     width: 100%;
 }
 
@@ -628,7 +627,7 @@ Input labels for caroussel dots, with reduced opacity on normal state and full o
 .slide-image img {
     width: auto;
     min-width: 100%;
-    height: 100%;
+    height: 100% !important;
 }
 
 .carousel-controls {
@@ -831,16 +830,7 @@ form{
     margin-bottom: 0;
 }
 
-#about .img-wrapper{
-    height: 15rem;
-    width: auto;
-    overflow: hidden;
-}
 
-#about .img-wrapper img{
-    height: 100%;
-    width: 100%;
-}
 
 #about .about, #about .text{
     flex: 1;
@@ -889,8 +879,17 @@ form{
     padding-bottom: 1rem;
 }
 
+
 .team-bg .grid-item:hover{
     transform: none;
+}
+
+/* Fixes images to avoid distortions on different screens */
+img:not(.logo){
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
  /* Footer with background color, elements displayed as a grid of 
@@ -933,10 +932,6 @@ form{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-    
-    .grid-item .img-wrapper{
-        max-height: 12rem;
-    }
 
     .cta-bg p{
         width: 50%;
@@ -959,14 +954,6 @@ form{
         line-height: 350px;
     }
 
-    #about .img-wrapper{
-        height: 20rem;
-    }
-    
-    #about .img-wrapper img{
-        height: 100%;
-        width: auto;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -994,9 +981,6 @@ form{
         line-height: 300px;
     }
 
-    #about .img-wrapper{
-        height: 25rem;
-    }
 }
 
 /* ==========MAIN SECTION STYLES (Large Screen)============ */
@@ -1006,9 +990,6 @@ form{
         gap: 2rem 1rem;
     }
     
-    .grid-item .img-wrapper{
-        max-height: 13rem;
-    }
 
     .w-50{
         width: 50vw;
@@ -1032,17 +1013,11 @@ form{
     }
 
     #about .img-wrapper{
-        height: 25rem;
-        width: auto;
-        overflow: hidden;
         flex: 1;
+        max-height: 30rem;
+        overflow: hidden;
     }
     
-    #about .img-wrapper img{
-        height: 100%;
-        width: 100%;
-    }
-
     #about .d-lg-flex{
         justify-content: space-between;
         align-items: center;
@@ -1056,9 +1031,6 @@ form{
 
 @media screen and (min-width: 1200px) {
     
-    .grid-item .img-wrapper{
-        max-height: 15rem;
-    }
 
     .footer-info .container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1072,10 +1044,4 @@ form{
         margin: 2rem 15% 5rem 15%;
     }
 
-    /* Fixes images to avoid distortions on larger screen sizes */
-    img:not(.logo){
-        max-width: 100%;
-        height: auto !important;
-        object-fit: cover;
-    }
 }
