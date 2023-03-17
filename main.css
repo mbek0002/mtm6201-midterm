@@ -1,3 +1,4 @@
+ /* Adds fonts */
 @font-face {
     font-family: Amarante;
     src: url(../fonts/Amarante-Regular.ttf);
@@ -65,6 +66,7 @@ h2{
     font-size: 30px;
 }
 
+ /* UI angle-like element around the headings */
 .angle{
     position: relative;
     display: inline-block;
@@ -239,6 +241,8 @@ h5{
     display: flex;
 }
 
+ /* Styles for the hamburger menu, diplays only on mobile screens and translates the menu list from top to bottom */
+
 .toggle
 {
   display: block;
@@ -365,6 +369,7 @@ nav ul li a:hover, nav ul li a.active{
     color: var(--primary-bold);
 }
 
+ /*Styles for the skip links, hides them to the user and makes them visible to screen readers*/
 .skip-links{
     list-style: none;
     margin: 0;
@@ -480,6 +485,7 @@ nav ul li a:hover, nav ul li a.active{
 
 /* ==========MAIN SECTION STYLES STARTS (Mobile First)============ */
 
+/* Hero image on home page */
 .main-jumbotron{
     background: url("./images/two-female-friends_hero-img.png") center no-repeat;
     background-size: cover;
@@ -500,6 +506,8 @@ nav ul li a:hover, nav ul li a.active{
     display: inline-block;
 }
 
+ /* styles for the product items and displays as single column on mobile, 
+ 2 colums on medium and 3 columns on large screens */
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -545,7 +553,7 @@ nav ul li a:hover, nav ul li a.active{
     display: inline-block;
     margin-top: 2rem;
 }
-
+ /* CTA section with background image */
 .cta-bg{
     background: linear-gradient(0deg, rgba(0, 75, 60, 0.418), rgba(2, 121, 109, 0.325)), url("./images/latina-girl-cta-img.png") no-repeat top;
     background-size: cover;
@@ -559,7 +567,9 @@ nav ul li a:hover, nav ul li a.active{
     flex-wrap: wrap;
 }
 
-/* ==========Testimonial slider============ */
+/* ==========Testimonial slider, with elements displayed using radio buttons.
+Input labels act as caroussel controls to allow changes from one slide to another with transitions for smooth changes.
+Input labels for caroussel dots, with reduced opacity on normal state and full opacity when checked============ */
 .carousel {
     margin: 2rem 0 5rem 0;
 }
@@ -582,7 +592,7 @@ nav ul li a:hover, nav ul li a.active{
     -webkit-touch-callout: none;
 }
 
-ul.slides input {
+.slides input {
     display: none; 
 }
 
@@ -639,8 +649,6 @@ ul.slides input {
     cursor: pointer;
 }
 
-
-
 .carousel-controls .prev-slide {
     width: 49%;
     text-align: left;
@@ -696,7 +704,7 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 }
 
 
-
+ /* Header image on about and contact pages, with breadcrumb navigations centered on the image*/
 .header-img{
     background: linear-gradient(0deg, rgba(0, 75, 60, 0.418), rgba(2, 121, 109, 0.325)), url("./images/young-lady_header-img.png") no-repeat top;
     background-size: cover;
@@ -741,6 +749,7 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
     content: ">";
 }
 
+ /* Contact form element */
 form{
     border: 1px solid var(--grey);
     border-radius: 2px;
@@ -787,6 +796,7 @@ form{
     margin-bottom: 1rem;
 }
 
+ /* Contact informations displaying side by side on large screen and wrapping up on a single row on small screen sizes */
 .contact-info{
     flex-wrap: wrap;
     gap: 3rem;
@@ -864,6 +874,9 @@ form{
     margin-right: 1rem;
 }
 
+ /* Team section with background color and elements displayed in a grid.
+ Single columnon mobile, 2 columns on medium and 3 on large screen sizes. (Media queries down for the different variations) */
+
 .team-bg{
     background-color: var(--secondary-light);
     padding-top: 2rem;
@@ -880,6 +893,8 @@ form{
     transform: none;
 }
 
+ /* Footer with background color, elements displayed as a grid of 
+ 4 colums on large screen, 2 on medium and 1 on mobile. (Media queries down for the different variations) */
 .footer-info{
     background-color: var(--primary-bold);
     color: var(--white);
@@ -1057,6 +1072,7 @@ form{
         margin: 2rem 15% 5rem 15%;
     }
 
+    /* Fixes images to avoid distortions on larger screen sizes */
     img:not(.logo){
         max-width: 100%;
         height: auto !important;
