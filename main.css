@@ -540,7 +540,7 @@ nav ul li a:hover, nav ul li a.active{
 .grid-item:hover{
     transform: translate(0, -20px);
 }
-#products .grid-item:hover .title, #products .grid-item:hover{
+#products .grid-item:hover{
     background-color: var(--primary-bold);
 }
 
